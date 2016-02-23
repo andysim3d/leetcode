@@ -7,6 +7,7 @@
 * [Bit Manipulation](bit_manipulation.md)
 * [Tree](tree.md)
 * [Dynamic Programming](dynamic_programming.md)
+   * House Robber
 * [Backtracking](backtracking.md)
 * [Greedy](greedy.md)
 * [Linked List](linked_list.md)
