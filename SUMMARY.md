@@ -10,5 +10,5 @@
 * [Backtracking](backtracking.md)
 * [Greedy](greedy.md)
 * [Linked List](linked_list.md)
-* String
+* [String](string.md)
 
