@@ -6,7 +6,7 @@
 * [Math](math.md)
 * [Bit Manipulation](bit_manipulation.md)
 * [Tree](tree.md)
-* Dynamic Programming
+* [Dynamic Programming](dynamic_programming.md)
 * Backtracking
 * Greedy
 * Linked List
