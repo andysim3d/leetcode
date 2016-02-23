@@ -5,7 +5,7 @@
    * [1.1 Remove Element](11_remove_element.md)
 * [Math](math.md)
 * [Bit Manipulation](bit_manipulation.md)
-* Tree
+* [Tree](tree.md)
 * Dynamic Programming
 * Backtracking
 * Greedy
