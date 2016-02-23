@@ -23,7 +23,7 @@
 那么，我们可以推出其状态转移方程为
 
 
-$$F(i) = max(F(i-1), F(i - 2) + W(i))$$
+$$ F(i) = max(F(i-1), F(i - 2) + W(i)) $$
 
 状态转移方程有了，代码也就出来了。
 
@@ -52,9 +52,9 @@ class Solution(object):
 
 ##分析：
 
-时间复杂度： $$O(n)$$
+时间复杂度： $$ O(n) $$
 
-空间复杂度： $$O(1)$$
+空间复杂度： $$ O(1) $$
 
 #213. House Robber II
 [House Robber II](https://leetcode.com/problems/house-robber-II/)
@@ -97,9 +97,9 @@ class Solution(object):
         return max(withFirst[-2], withLast[-1])
 ```
 ##分析：
-时间复杂度：  $$O(n)$$
+时间复杂度：  $$ O(n) $$
 
-空间复杂度：  $$O(n)$$
+空间复杂度：  $$ O(n) $$
 
 
 
