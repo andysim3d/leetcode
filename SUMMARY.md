@@ -5,4 +5,5 @@
    * [1.1 Remove Element](11_remove_element.md)
 * Bit Manipulation
 * Tree
+* Dynamic Programming
 
