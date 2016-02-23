@@ -1,5 +1,5 @@
-# 1.1 Remove Element
-
+# 27.Remove Element
+[Remove Element](https://leetcode.com/problems/remove-element/)
 >Given an array and a value, remove all instances of that value in place and return the new length.
 
 
