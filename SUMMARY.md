@@ -8,4 +8,5 @@
 * Dynamic Programming
 * Backtracking
 * Greedy
+* Linked List
 
