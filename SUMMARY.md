@@ -7,4 +7,5 @@
 * Tree
 * Dynamic Programming
 * Backtracking
+* Greedy
 
