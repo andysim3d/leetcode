@@ -1,6 +1,6 @@
 # 198. House Robber
 
-[House Robber](https://leetcode.com/problems/house-robber/)
+[House Robber I](https://leetcode.com/problems/house-robber/)
 
 >You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
 
@@ -55,3 +55,50 @@ class Solution(object):
 时间复杂度： $$O(n)$$
 
 空间复杂度： $$O(1)$$
+
+
+[House Robber II](https://leetcode.com/problems/house-robber-II/)
+
+
+>After robbing those houses on that street, the thief has found himself a new place for his thievery so that he will not get too much attention. This time, all houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, the security system for these houses remain the same as for those in the previous street.
+
+>Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
+
+##题目要求：
+与 1 一样的限制条件，只是所有住户连成了环，即偷了第一家就不能偷最后一家，反之亦然。
+
+##要求：
+无
+##解法：
+偷懒来说，我们可以计算 **一定偷第一家** 和 **一定偷最后一家**，然后比较两者比较大的那个就可以了。
+
+##代码：
+```python
+class Solution(object):
+    def rob(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if nums == []:
+            return 0
+        if len(nums) <= 2:
+            return max(nums)
+        withFirst = [0]*len(nums)
+        withLast = [0]*len(nums)
+        withFirst[0] = nums[0]
+        withFirst[1] = max(nums[0], nums[1])
+        withLast[0] = 0
+        withLast[1] = nums[1]
+        for i in xrange(2, len(nums)):
+            withFirst[i] = max(withFirst[i - 1], withFirst[i-2] + nums[i])
+            withLast[i] = max(withLast[i - 1], withLast[i-2] + nums[i])
+        
+        return max(withFirst[-2], withLast[-1])
+```
+##分析：
+时间复杂度： $$O(n)$$
+空间复杂度： $$O(n)$$
+
+
+
