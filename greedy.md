@@ -1,2 +1,2 @@
-# Greedy
+# Greedy 贪心
 
