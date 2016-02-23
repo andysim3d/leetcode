@@ -8,7 +8,7 @@
 * [Tree](tree.md)
 * [Dynamic Programming](dynamic_programming.md)
 * [Backtracking](backtracking.md)
-* Greedy
+* [Greedy](greedy.md)
 * Linked List
 * String
 
