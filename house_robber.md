@@ -1,4 +1,4 @@
-# 198. House Robber
+# 198. House Robber I
 
 [House Robber I](https://leetcode.com/problems/house-robber/)
 
