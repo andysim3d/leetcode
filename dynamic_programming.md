@@ -1,2 +1,2 @@
-# Dynamic Programming
+# Dynamic Programming 动态规划
 
