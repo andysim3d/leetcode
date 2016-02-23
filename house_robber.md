@@ -97,9 +97,9 @@ class Solution(object):
         return max(withFirst[-2], withLast[-1])
 ```
 ##分析：
-时间复杂度： $$O(n)$$
+时间复杂度：  $$O(n)$$
 
-空间复杂度： $$O(n)$$
+空间复杂度：  $$O(n)$$
 
 
 
