@@ -9,6 +9,6 @@
 * [Dynamic Programming](dynamic_programming.md)
 * [Backtracking](backtracking.md)
 * [Greedy](greedy.md)
-* Linked List
+* [Linked List](linked_list.md)
 * String
 
