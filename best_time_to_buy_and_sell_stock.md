@@ -30,7 +30,7 @@ class Solution(object):
         if prices == [] or len(prices) == 1:
             return 0
             
-        p = [prices[i + 1] - prices[i] for i in xrange(len(prices) - 1)]
+        p = (prices[i + 1] - prices[i] for i in xrange(len(prices) - 1))
         return sum(i for i in p if i > 0)
         ```
 
