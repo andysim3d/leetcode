@@ -22,12 +22,7 @@
 
 那么，我们可以推出其状态转移方程为
 
-
-$$ 
-
-F(i) = max(F(i-1), F(i - 2) + W(i)) 
-
-$$
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large F(i) = max(F(i-1), F(i - 2) + W(i)) " style="border:none;"> 
 
 状态转移方程有了，代码也就出来了。
 
