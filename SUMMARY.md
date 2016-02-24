@@ -4,7 +4,7 @@
 * [Array](chapter1.md)
    * [Remove Element](11_remove_element.md)
    * [Product of Array Except Self](product_of_array_except_self.md)
-   * Two Sum
+   * [Two Sum](two_sum.md)
 * [Math](math.md)
 * [Bit Manipulation](bit_manipulation.md)
 * [Tree](tree.md)
