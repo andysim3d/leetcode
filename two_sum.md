@@ -13,8 +13,16 @@
 >Because nums[0] + nums[1] = 2 + 7 = 9,
 >return [0, 1].</pre>
 
+##题目要求：
+给定一个数列和一个target，找到数列中两个加和为target的数字，并输出其位置
 
+##要求：
+无
 
+##解答：
+我们可以用字典/哈希表/散列表，以数字的值为索引，位置为值，来存储每一个数字的位置。这样只要取到某个数字，并计算它与target的差值，并察看是否存在值为差值的元素，就可以找到对应的两个数字。
+
+##代码：
 
 ``` python
 class Solution(object):
@@ -43,3 +51,5 @@ class Solution(object):
                 if __dict__.get(d) != None:
                     return [i,__dict__[d][0]]
 ```
+
+##分析：
