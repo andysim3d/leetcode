@@ -53,21 +53,15 @@ class Solution(object):
 
 ##分析：
 
-时间复杂度： 
+时间复杂度：
 
-$$
 
-O(n)
-
-$$
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  O(n)" style="border:none;">
 
 空间复杂度：
 
-$$
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large O(1)" style="border:none;">
 
-O(1) 
-
-$$
 
 #213. House Robber II
 [House Robber II](https://leetcode.com/problems/house-robber-II/)
