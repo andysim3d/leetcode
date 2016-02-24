@@ -11,6 +11,7 @@
 * [Tree](tree.md)
 * [Dynamic Programming](dynamic_programming.md)
    * [House Robber](house_robber.md)
+   * Best Time to Buy and Sell Stock 
 * [Backtracking](backtracking.md)
 * [Greedy](greedy.md)
 * [Linked List](linked_list.md)
