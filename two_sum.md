@@ -20,7 +20,7 @@
 无
 
 ##解答：
-我们可以用字典/哈希表/散列表，以数字的值为索引，位置为值，来存储每一个数字的位置。这样只要取到某个数字，并计算它与target的差值，并察看是否存在值为差值的元素，就可以找到对应的两个数字。（注意存在某些值出现多次的情况）
+我们可以用字典/哈希表/散列表，以数字的值为索引，位置为值，来存储每一个数字的位置。这样只要取到某个数字，并计算它与target的差值，并察看是否存在值为差值的元素，就可以找到对应的两个数字。
 
 ##代码：
 
@@ -32,24 +32,12 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        __dict__ = dict()
-        for i in xrange(len(nums)):
-            if __dict__.get(nums[i]) != None:
-                __dict__[nums[i]].append(i)
+        check = {}
+        for i, num in enumerate(nums):
+            if num not in check:
+                check[target - num] = i
             else:
-                __dict__[nums[i]] = [i]
-        
-        print __dict__
-        for i in xrange(len(nums)):
-            d = target - nums[i]
-            if d == nums[i]:
-                if len(__dict__.get(nums[i])) >= 2:
-                    return __dict__[nums[i]][:2]
-                else:
-                    continue
-            else:
-                if __dict__.get(d) != None:
-                    return [i,__dict__[d][0]]
+                return [min(i,check[num]), max(i,check[num])]
 ```
 
 ##分析：
