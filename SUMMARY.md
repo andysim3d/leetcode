@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Array](chapter1.md)
-   * [Remove Element](remove_element.md)
+   * [Remove Element](11_remove_element.md)
    * [Product of Array Except Self](product_of_array_except_self.md)
 * [Math](math.md)
 * [Bit Manipulation](bit_manipulation.md)
