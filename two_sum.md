@@ -20,7 +20,7 @@
 无
 
 ##解答：
-我们可以用字典/哈希表/散列表，以数字的值为索引，位置为值，来存储每一个数字的位置。这样只要取到某个数字，并计算它与target的差值，并察看是否存在值为差值的元素，就可以找到对应的两个数字。
+我们可以用字典/哈希表/散列表，以数字的值为索引，位置为值，来存储每一个数字的位置。这样只要取到某个数字，并计算它与target的差值，并察看是否存在值为差值的元素，就可以找到对应的两个数字。（注意存在某些值出现多次的情况）
 
 ##代码：
 
@@ -53,3 +53,11 @@ class Solution(object):
 ```
 
 ##分析：
+
+时间复杂度：
+
+<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(n) " style="border:none;">
+
+空间复杂度：
+
+<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(n) " style="border:none;">
