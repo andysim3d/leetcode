@@ -47,4 +47,4 @@ class Solution(object):
 
 空间复杂度：
 
-<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(n) " style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(1) " style="border:none;">
