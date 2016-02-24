@@ -30,6 +30,7 @@ class Solution(object):
         if prices == [] or len(prices) == 1:
             return 0
             
+        #此处用的为生成器，并非开新数组
         p = (prices[i + 1] - prices[i] for i in xrange(len(prices) - 1))
         return sum(i for i in p if i > 0)
         ```
@@ -41,6 +42,5 @@ class Solution(object):
 <img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(n) " style="border:none;">
 
 空间复杂度：
-
 
 <img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(1) " style="border:none;">
