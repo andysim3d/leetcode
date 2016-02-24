@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Array](chapter1.md)
    * [1.1 Remove Element](11_remove_element.md)
-   * Product of Array Except Self
+   * [Product of Array Except Self](product_of_array_except_self.md)
 * [Math](math.md)
 * [Bit Manipulation](bit_manipulation.md)
 * [Tree](tree.md)
