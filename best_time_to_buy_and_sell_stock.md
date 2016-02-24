@@ -12,7 +12,7 @@
 无
 
 ##解答：
-可以将问题转化为求[最大子序列和]()，只要参数为当天与前一天股票的差值即可。
+可以将问题转化为求[最大子序列和](https://andysim3d.gitbooks.io/leetcode/content/maximum_subarry.html)，只要输入变为当天与前一天股票的差值即可。
 
 
 ##代码：
