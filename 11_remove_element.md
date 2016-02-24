@@ -43,6 +43,10 @@
 
 ##分析：
 
-时间复杂度： $$O(n)$$  (**遍历整个数组**)
+时间复杂度： 
 
-空间复杂度： $$O(1)$$  (**In place**)
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large O(n)" style="border:none;">  (**遍历整个数组**)
+
+空间复杂度： 
+
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large O(1)" style="border:none;">    (**In place**)
