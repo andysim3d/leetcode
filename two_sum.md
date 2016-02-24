@@ -1,2 +1,45 @@
-# Two Sum
+# 1.Two Sum
 
+[Two Sum](https://leetcode.com/problems/two-sum/)
+
+
+>Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+>You may assume that each input would have exactly one solution.
+
+>Example:
+
+><pre>Given nums = [2, 7, 11, 15], target = 9,
+>Because nums[0] + nums[1] = 2 + 7 = 9,
+>return [0, 1].</pre>
+
+
+
+
+``` python
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        __dict__ = dict()
+        for i in xrange(len(nums)):
+            if __dict__.get(nums[i]) != None:
+                __dict__[nums[i]].append(i)
+            else:
+                __dict__[nums[i]] = [i]
+        
+        print __dict__
+        for i in xrange(len(nums)):
+            d = target - nums[i]
+            if d == nums[i]:
+                if len(__dict__.get(nums[i])) >= 2:
+                    return __dict__[nums[i]][:2]
+                else:
+                    continue
+            else:
+                if __dict__.get(d) != None:
+                    return [i,__dict__[d][0]]
+```
