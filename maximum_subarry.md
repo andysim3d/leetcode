@@ -17,9 +17,10 @@ the contiguous subarray ```[4,−1,2,1]``` has the largest sum = ```6```.
 ##解答：
 动态规划类题目。动态转移方程为：
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large F(i) = Max(num, F(i- 1) %2Bnum(i))" style = "bold">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large F(i) = Max(num, F(i- 1) %2Bnum(i))" style = "border:none;">
 
 
+##代码：
 
 ```python
 class Solution(object):
@@ -38,3 +39,12 @@ class Solution(object):
             
         return RealMax
 ```
+
+##分析：
+时间复杂度：
+
+<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(n) " style="border:none;">
+
+空间复杂度：
+
+<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(n) " style="border:none;">
