@@ -97,4 +97,12 @@ class Solution(object):
             
         return InOrder
 ```
+##分析
+时间复杂度：
 
+
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  O(n)" style="border:none;">
+
+空间复杂度：
+
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large O(1)" style="border:none;">
