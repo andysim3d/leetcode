@@ -16,6 +16,7 @@
 * [Backtracking](backtracking.md)
 * [Greedy](greedy.md)
    * [Jump Game](jump_game.md)
+   * [Jump Game](jump_game.md)
 * [Linked List](linked_list.md)
    * [Delete Node in a Linked List](delete_node_in_a_linked_list.md)
 * [String](string.md)
