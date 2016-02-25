@@ -7,7 +7,7 @@
    * [Two Sum](two_sum.md)
    * [Maximum Subarry](maximum_subarry.md)
    * [First Missing Positive My Submissions Question](first_missing_positive_my_submissions_question.md)
-   * Jump Game
+   * [Jump Game](jump_game.md)
 * [Math](math.md)
 * [Bit Manipulation](bit_manipulation.md)
 * [Tree](tree.md)
