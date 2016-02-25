@@ -16,7 +16,7 @@
    * [Best Time to Buy and Sell Stock](best_time_to_buy_and_sell_stock.md)
 * [Backtracking](backtracking.md)
 * [Greedy](greedy.md)
-   * Jump Game
+   * [Jump Game](jump_game.md)
 * [Linked List](linked_list.md)
    * [Delete Node in a Linked List](delete_node_in_a_linked_list.md)
 * [String](string.md)
