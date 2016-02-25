@@ -77,7 +77,7 @@ Given array A = ```[2,3,1,1,4]```
 The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
 
 ##题目要求：
-和I 一样的要求，只是这回需要返回最少跳几次可以到达。
+和 I 一样的要求，只是这回需要返回最少跳几次可以到达。
 
 ##要求：
 无
