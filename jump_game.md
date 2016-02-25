@@ -21,6 +21,8 @@
 
 ##解答：
 
+经典的贪心算法问题。对于这类题，首先要确定当前能跳跃到的最大范围，然后继续由该范围中的所有值为输入，求能跳到的最远距离。直到能跳到的最大范围为空集（即跳不动了）或跳到最后一块为止
+
 ##代码：
 
 ```python
@@ -48,7 +50,13 @@ class Solution(object):
 
 
 ##分析：
+时间复杂度：
 
+<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(n) " style="border:none;">
+
+空间复杂度：
+
+<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(n) " style="border:none;">
 
 
 
@@ -75,7 +83,7 @@ The minimum number of jumps to reach the last index is 2. (Jump 1 step from inde
 无
 
 ##解答：
-
+和1一样的解法，记得在每次切换跳跃范围时记得计数就可以了
 
 ##代码：
 
@@ -105,3 +113,10 @@ class Solution(object):
 
 
 ##分析：
+时间复杂度：
+
+<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(n) " style="border:none;">
+
+空间复杂度：
+
+<img src="http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large O(n) " style="border:none;">
