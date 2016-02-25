@@ -12,7 +12,7 @@ Your algorithm should run in O(n) time and uses constant space.
 ##题目要求：
 给定乱序数列，要求找到缺少的第一个正数
 
-例如给定```[1,2,0]```，缺少第一个正数就是3
+例如给定```[3,4,-1,1]```，缺少第一个正数就是```2```
 
 ##要求：
 不能使用额外空间，O(n)的时间复杂度
@@ -25,6 +25,10 @@ Your algorithm should run in O(n) time and uses constant space.
 可以考虑，我们将输入的数组视为哈希表，数组下标+1表示其值。那么，我们需要先遍历数组一次，将所有可以达成 *下标+1 = 值* 的元素放置在相应的位置。然后从第一个元素开始遍历，第一个不满足
 *下标 + 1 = 值* 的元素即为缺少的第一个正数。
 
+
+示例图：
+
+![](http://images.cnitblog.com/blog/300640/201304/21220310-d1b03fc59dd24e82b6db34a2cae12111.jpg)
 
 ##代码：
 
