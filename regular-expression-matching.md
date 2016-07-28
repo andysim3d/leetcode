@@ -1,6 +1,6 @@
 # Regular Expression Matching
 
-[Delete Node in a Linked List](https://leetcode.com/problems/regular-expression-matching/)
+[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
 
 >Implement regular expression matching with support for '.' and '*'.
 
