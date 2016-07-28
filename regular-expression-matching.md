@@ -1,4 +1,4 @@
-# Regular-expression-matching
+# Regular Expression Matching
 
 [Delete Node in a Linked List](https://leetcode.com/problems/regular-expression-matching/)
 
