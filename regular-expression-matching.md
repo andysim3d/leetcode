@@ -32,11 +32,11 @@ isMatch("aab", "c*a*b") → true
 典型的DP问题，对于任意S[i] 和 P[j]可能出现的情况有两种：
 
 - 1 匹配：
-  - S[i] == P[j] || P[j] == '.'
+  - S[i] == P[j] || P[j] == '.' --> 即DP[i]\[j]应与DP[i - 1]\[j - 1]一致。
 - 2 不匹配：
     - P[j] == '\*' :
-      - P[j - 1] == S[i] || P[j - 1] == '.'
-      - j = 0
+      - P[j - 1] == S[i] || P[j - 1] == '.'  --> DP[i]\[j] = DP[i - 1]\[j] || DP[i]\[j - 2]
+      - j = 0 --> 什么都没发生。
     - P[j] != '\*' :
       - 不匹配
 
@@ -87,8 +87,8 @@ public class Solution {
 时间复杂度：
 
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  O(1)" style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large  O(n^2)" style="border:none;">
 
 空间复杂度：
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large O(1)" style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large O(n^2)" style="border:none;">
