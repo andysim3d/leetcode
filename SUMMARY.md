@@ -14,7 +14,7 @@
 * [Dynamic Programming](dynamic_programming.md)
    * [House Robber](house_robber.md)
    * [Best Time to Buy and Sell Stock](best_time_to_buy_and_sell_stock.md)
-   * regular-expression-matching
+   * [regular-expression-matching](regular-expression-matching.md)
 * [Backtracking](backtracking.md)
 * [Greedy](greedy.md)
    * [Jump Game](jump_game.md)
