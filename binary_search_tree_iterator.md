@@ -8,8 +8,6 @@ Elements are visited in ascending order (i.e. an in-order traversal)
 next() and hasNext() queries run in O(1) time in average.
 
 
-
-
 ##题目要求：
 设计一个迭代器，要求用该迭代器可以遍历二叉搜索树的所有元素。尽量使迭代器的 next() 和hasNext()方法时间复杂度为O(1)
 ##要求：
