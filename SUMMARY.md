@@ -11,7 +11,7 @@
 * [Bit Manipulation](bit_manipulation.md)
 * [Tree](tree.md)
    * [Range Sum Query -Mutable](range_sum_query_-mutable.md)
-   * Binary Search Tree Iterator
+   * [Binary Search Tree Iterator](binary_search_tree_iterator.md)
 * [Dynamic Programming](dynamic_programming.md)
    * [House Robber](house_robber.md)
    * [Best Time to Buy and Sell Stock](best_time_to_buy_and_sell_stock.md)
