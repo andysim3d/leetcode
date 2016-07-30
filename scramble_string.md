@@ -1,2 +1,2 @@
-# Scamble String
+# Scramble String
 
