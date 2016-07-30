@@ -25,5 +25,5 @@
 * [Linked List](linked_list.md)
    * [Delete Node in a Linked List](delete_node_in_a_linked_list.md)
 * [String](string.md)
-* Data
+* [Data](data.md)
 
