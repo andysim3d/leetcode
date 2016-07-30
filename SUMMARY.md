@@ -18,7 +18,7 @@
    * [Best Time to Buy and Sell Stock](best_time_to_buy_and_sell_stock.md)
    * [Regular Expression Matching](regular-expression-matching.md)
    * [Copy Books](copy_books.md)
-   * Scamble String
+   * [Scamble String](scramble_string.md)
 * [Backtracking](backtracking.md)
 * [Greedy](greedy.md)
    * [Wildcard matching](wildcard.md)
