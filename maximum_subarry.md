@@ -176,9 +176,12 @@ Return the largest sum.
 我们需要建立两个二维数组，分别是 DP[]\[] 和 local []\[]。 其中， local[i]\[j]表示前i个数里分成j个集合且一定会取到i的最大子集和。DP[i]\[j]表示前i个数里分成j个集合，可以不取到i的最大子集和。
 
 所以状态转移方程为：
+
+```
   local[i]\[j] = max(local[i - 1]\[j], DP[i - 1]\[j - 1](确保DP一定没有取到i)) + nums[i - 1];
   DP[i]\[j] =  if i == j: local[i]\[j] (确保必须没有空集)。
-               else: max(local[i]\[j], DP[i]\[j - 1]);
+              else: max(local[i]\[j], DP[i]\[j - 1]);
+```
 
 ##代码：
 
