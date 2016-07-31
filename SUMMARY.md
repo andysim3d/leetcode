@@ -5,7 +5,6 @@
    * [Remove Element](remove_element.md)
    * [Product of Array Except Self](product_of_array_except_self.md)
    * [Two Sum](two_sum.md)
-   * [Maximum Subarry](maximum_subarry.md)
    * [First Missing Positive My Submissions Question](first_missing_positive_my_submissions_question.md)
 * [Math](math.md)
 * [Bit Manipulation](bit_manipulation.md)
@@ -18,6 +17,7 @@
    * [Best Time to Buy and Sell Stock](best_time_to_buy_and_sell_stock.md)
    * [Regular Expression Matching](regular-expression-matching.md)
    * [Copy Books](copy_books.md)
+   * [Maximum Subarry](maximum_subarry.md)
    * [Scramble String](scramble_string.md)
 * [Backtracking](backtracking.md)
 * [Greedy](greedy.md)
@@ -27,4 +27,3 @@
    * [Delete Node in a Linked List](delete_node_in_a_linked_list.md)
 * [String](string.md)
 * [Data structure](data.md)
-
