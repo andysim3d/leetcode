@@ -178,9 +178,9 @@ Return the largest sum.
 所以状态转移方程为：
 
 ```
-  local[i]\[j] = max(local[i - 1]\[j], DP[i - 1]\[j - 1](确保DP一定没有取到i)) + nums[i - 1];
-  DP[i]\[j] =  if i == j: local[i]\[j] (确保必须没有空集)。
-              else: max(local[i]\[j], DP[i]\[j - 1]);
+  local[i][j] = max(local[i - 1][j], DP[i - 1][j - 1](确保DP一定没有取到i)) + nums[i - 1];
+  DP[i][j] =  if i == j: local[i][j] (确保必须没有空集)。
+              else: max(local[i][j], DP[i - 1][j]);
 ```
 
 ##代码：
