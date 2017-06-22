@@ -8,6 +8,7 @@
 Find the maximum coins you can collect by bursting the balloons wisely.
 
 
+
 ###Example
 >Given [3, 1, 5, 8]
 >
