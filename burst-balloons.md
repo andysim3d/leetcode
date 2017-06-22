@@ -26,55 +26,43 @@ Return 167
 ##要求：
 无
 ##解法：
-一道比较
-还是DP的问题。假设我们有数组DP[]\[],对于 DP[i]\[j],表示 i个人抄j本书所需的最少时间。可以得到 DP[1]\[j]的全部解。递推，可知 对于任意 DP[i]\[j]，有状态转移方程：
+一道比较不好想的DP题目。采取从顶至下的方法，我们假设只剩最后一个气球，那么它的分数就是**它本身 \* 1 \*1 = 它本身的分数**。
+接下来，我们可以将数组分成 最后一个气球左边，和最后一个气球右边两部分。对于左边，我们可知其右边界是最后一个气球（分治法分析）。同理，其右侧的左边界也是最后一个气球。
+那么，我们可以假设，DP[i]\[j]代表，i为左边界，j为右边界所能得到的最高分数。
+则， 对于DP[i]\[j],有着：
+
+```python
+DP[i][j] = max(DP[i][j],
+            max([num[i] * num[k] * num[j] + DP[i][k] + DP[k][j] for k in range(i+1, j)])
+)
 
 ```
-DP[i][j] = min(DP[i - 1][j],  // 完全不用第i个人抄写 
-            max(DP[i - 1][j - 1], page[j]),  //让第i个人抄写第j份
-            max(DP[i - 1][j - 2], page[j] + page[j - 1]),  //让第i个人抄写j, j - 1两份。
-            ...,
-            max(DP[i - 1][0], page[j] + page[j - 1] + ... + page[0]))//全部让第i个人写。
-```
-可解得最后 DP[k]\[pages.length]即为 k人抄所有书所需最短时间。
 
-这里有一个可以优化的地方，因为对于 ```DP[1][j]``` 来说，它就是SUM(```pages[0 ... j]```)。所以我们计算在   ```pages[j] + pages[j - 1] + ... + pages[n]```   时，可以用 ```DP[1][j] - DP[1][n]```来代替。
+即， 对于任意位置的k, 我们都可以计算num[k]\*num[i]\*num[j] + DP[i]\[k] + DP[j]\[k]的值（假设 k为最后打破的气球）。并从 i+1 到 j，寻找能使其和最大的k。
 
+可优化的点： 因为分数计算是乘法，则我们可以在预处理时去掉所有的0 来减少元素大小。
 
 
 ##代码：
 
-```java
+```python
+    class Solution(object):
+        def maxCoins(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: int
+            """
+            nums = [1] + [i for i in nums if i > 0] + [1]
+            n = len(nums)
+            dp = [[0] * n for _ in xrange(n)]
+            for k in xrange(2, n):
+                for left in xrange(0, n - k):
+                    right = left + k
+                    dp[left][right] = max(dp[left][right],
+                        max([nums[left] * nums[i] * nums[right] + dp[left][i] + dp[i][right] for i in xrange(left+1, right)])
+                    )
+            return dp[0][n - 1]
 
-public class Solution {
-    /**
-     * @param pages: an array of integers
-     * @param k: an integer
-     * @return: an integer
-     */
-    public int copyBooks(int[] pages, int k) {
-        // write your code here
-        // DP[i][j] --> i person j pages, minimum time
-        int [][] DP = new int[k + 1][pages.length + 1];
-        DP[1][1] = pages[0];
-        for (int i = 1; i < pages.length + 1; ++i){
-            DP[1][i] = DP[1][i - 1] + pages[i - 1];
-        }
-        // BTW, DP[1][j] = SUM[j - 1](pages)
-        
-        for (int i = 2; i < k + 1; ++i){
-            for (int j = pages.length; j >= 0; -- j){
-                //suppose this guy gain nothing;
-                DP[i][j] = DP[i - 1][j];
-                //then from [l] to [l, 0], try to match min
-                for (int l = j; l > 0; --l){
-                    DP[i][j] = Math.min(DP[i][j], 
-                                  Math.max(DP[i - 1][l] , DP[1][j] - DP[1][l]) );
-                }
-            }
-        }
-        return DP[k][pages.length];
-    }
 ```
 ##分析：
 时间复杂度：
