@@ -59,9 +59,9 @@ DP[i][j] = max(DP[i][j],
             for k in xrange(2, n):
                 for left in xrange(0, n - k):
                     right = left + k
-                    dp[left][right] = max(dp[left][right],
+                    dp[left][right] = \
                         max([nums[left] * nums[i] * nums[right] + dp[left][i] + dp[i][right] for i in xrange(left+1, right)])
-                    )
+                    
             return dp[0][n - 1]
 
 ```
